@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import ResponsiveAppBar from './components/ResponsiveAppBar';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [isDarkMode, setIsDarkMode] = useState(true);
+
+    const toggleTheme = () => {
+        setIsDarkMode(!isDarkMode);
+    };
+
+    const appStyle = {
+        backgroundColor: isDarkMode ? '#000000' : '#ffffff',
+        color: isDarkMode ? '#ffffff' : '#000000',
+        minHeight: '100vh',
+        transition: 'background-color 0.3s ease',
+    };
+
+    return (
+        <div style={appStyle}>
+            <ResponsiveAppBar isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+            {/* Other components go here */}
+        </div>
+    );
 }
 
 export default App;

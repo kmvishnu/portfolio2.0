@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import ResponsiveAppBar from './components/ResponsiveAppBar';
 import './App.css';
+import Header from './components/Header/Header';
+import About from './components/About/About';
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(true);
@@ -10,15 +11,17 @@ function App() {
     };
 
     const appStyle = {
-        backgroundColor: isDarkMode ? '#000000' : '#ffffff',
-        color: isDarkMode ? '#ffffff' : '#000000',
+        backgroundColor: isDarkMode ? '#000000' : '#f4f4f4',
+        color: isDarkMode ? '#f4f4f4' : '#000000',
         minHeight: '100vh',
         transition: 'background-color 0.3s ease',
     };
 
     return (
         <div style={appStyle}>
-            <ResponsiveAppBar isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+            <Header isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+            <About isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+
             {/* Other components go here */}
         </div>
     );

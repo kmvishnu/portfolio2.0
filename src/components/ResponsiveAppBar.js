@@ -28,19 +28,19 @@ function ResponsiveAppBar({ isDarkMode, toggleTheme }) {
     return (
         <AppBar position="static" sx={{ backgroundColor: isDarkMode ? '#000000' : '#ffffff', color: isDarkMode ? '#ffffff' : '#000000', boxShadow: 'none' }}>
             <Container maxWidth="xl">
-                <Toolbar disableGutters>
+                <Toolbar disableGutters sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     {/* Left side: John Doe */}
                     <Typography
-                        variant="h6"
+                        variant="h5"
                         noWrap
                         component="div"
-                        sx={{ mr: 2, display: { xs: 'flex', md: 'flex' }, alignItems: 'center' }}
+                        sx={{ display: { xs: 'flex', md: 'flex' }, alignItems: 'center' }}
                     >
                         Vishnu K M
                     </Typography>
 
                     {/* Centered Pages */}
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}>
+                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center', alignItems: 'center' }}>
                         {pages.map((page) => (
                             <Button
                                 key={page}
@@ -50,10 +50,11 @@ function ResponsiveAppBar({ isDarkMode, toggleTheme }) {
                                 {page}
                             </Button>
                         ))}
+                        <Button>GitHub</Button>
                     </Box>
 
                     {/* Right side: Theme Toggle Button and Menu Icon */}
-                    <Box sx={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', flexGrow: 1 }}>
+                    <Box sx={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
                         {/* Theme Toggle Button */}
                         <IconButton onClick={toggleTheme} color="inherit">
                             {isDarkMode ? <Brightness7Icon /> : <Brightness4Icon />}
@@ -88,14 +89,18 @@ function ResponsiveAppBar({ isDarkMode, toggleTheme }) {
                                 sx={{ display: { xs: 'block', md: 'none' } }}
                             >
                                 {pages.map((page) => (
-                                    <MenuItem key={page} onClick={handleCloseNavMenu}>
+                                    <MenuItem key={page} onClick={handleCloseNavMenu}   >
                                         <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
                                     </MenuItem>
                                 ))}
+                                <MenuItem key='github' onClick={handleCloseNavMenu}   >
+                                    <Typography sx={{ textAlign: 'center' }}>Github</Typography>
+                                </MenuItem>
                             </Menu>
                         </Box>
                     </Box>
                 </Toolbar>
+
             </Container>
         </AppBar>
     );

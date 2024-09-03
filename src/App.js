@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './App.css';
 import Header from './components/Header/Header';
 import About from './components/About/About';
+import Skills from './components/Skills/Skills';
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(true);
@@ -17,12 +17,31 @@ function App() {
         transition: 'background-color 0.3s ease',
     };
 
+    const headerStyle = {
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100%',
+        zIndex: 1000,
+        backgroundColor: isDarkMode ? '#000000' : '#f4f4f4',
+        color: isDarkMode ? '#f4f4f4' : '#000000',
+        padding: '10px 20px'
+    };
+
+    const contentStyle = {
+        marginTop: '50px',  // Adjust this value based on your header height
+    };
+
     return (
         <div style={appStyle}>
-            <Header isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
-            <About isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
-
-            {/* Other components go here */}
+            <header style={headerStyle}>
+                <Header isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+            </header>
+            <div style={contentStyle}>
+                <About isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+                <Skills isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+                {/* Other components go here */}
+            </div>
         </div>
     );
 }

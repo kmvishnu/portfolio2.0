@@ -1,109 +1,3 @@
-// import React from 'react';
-// import Box from '@mui/material/Box';
-// import Grid from '@mui/material/Grid2';
-// import { Button, styled, Typography } from '@mui/material';
-// import { ReactTyped } from "react-typed";
-
-// const StyledContainer = styled('div')(({ theme }) => ({
-//   padding: theme.spacing(0),
-//   backgroundColor: '#0a0a23',
-//   color: 'white',
-//   minHeight: '100vh',
-//   display: 'flex',
-//   alignItems: 'center',
-//   justifyContent: 'center',
-// }));
-
-// const ProfileImage = styled('img')(({ theme }) => ({
-//   borderRadius: '50%',
-//   width: '100%',
-//   maxWidth: '200px',
-//   height: 'auto',
-//   border: '4px solid #7e3af2',
-// }));
-
-// const CheckResumeButton = styled(Button)(({ theme }) => ({
-//   backgroundColor: '#7e3af2',
-//   color: 'white',
-//   marginTop: theme.spacing(1),
-//   padding: theme.spacing(1, 2),
-//   borderRadius: '25px',
-//   fontSize: '0.875rem',
-//   '&:hover': {
-//     backgroundColor: '#6b2fc1',
-//   },
-// }));
-
-// const ResponsiveTypography = styled(Typography)(({ theme }) => ({
-//   fontSize: '2rem',
-//   [theme.breakpoints.down('sm')]: {
-//     fontSize: '1.5rem',
-//   },
-// }));
-
-// function About() {
-//   return (
-//     <StyledContainer>
-//       <Grid container spacing={4} alignItems="center">
-//         {/* Box 1: Medium and Small Screens */}
-//         <Grid item xs={12} sm={7} md={7} sx={{ display: { xs: 'none', sm: 'block' } }}>
-//           <ResponsiveTypography variant="h2" component="h1" gutterBottom>
-//             Hi, I am <br /><span style={{ color: '#7e3af2' }}>Rishav Chanda</span>
-//           </ResponsiveTypography>
-//           <ResponsiveTypography variant="h4" component="h2" gutterBottom>
-//             I am a{' '}
-//             <span style={{ color: '#7e3af2', fontSize: '1.5rem' }}>
-//               <ReactTyped
-//                 strings={['Full Stack Developer', 'Frontend Developer', 'Backend Developer', 'Programmer']}
-//                 typeSpeed={40}
-//                 backSpeed={50}
-//                 loop
-//               />
-//             </span>
-//           </ResponsiveTypography>
-//           <Typography variant="body1" paragraph>
-//             I am a motivated and versatile individual, always eager to take on new challenges...
-//           </Typography>
-//           <CheckResumeButton variant="contained">Check Resume</CheckResumeButton>
-//         </Grid>
-//         <Grid item xs={12} sm={5} md={5} sx={{ display: { xs: 'none', sm: 'block' } }}>
-//           <Box>
-//             <ProfileImage src="https://via.placeholder.com/300" alt="Profile" />
-//           </Box>
-//         </Grid>
-
-//         {/* Box 2: Extra Small Screens */}
-//         <Grid item xs={12} sx={{ display: { xs: 'block', sm: 'none' } }}>
-//           <Box textAlign="center">
-//             <ProfileImage src="https://via.placeholder.com/300" alt="Profile" />
-//           </Box>
-//           <ResponsiveTypography variant="h2" component="h1" gutterBottom>
-//             Hi, I am <br /><span style={{ color: '#7e3af2' }}>Rishav Chanda</span>
-//           </ResponsiveTypography>
-//           <ResponsiveTypography variant="h4" component="h2" gutterBottom>
-//             I am a{' '}
-//             <span style={{ color: '#7e3af2', fontSize: '1.5rem' }}>
-//               <ReactTyped
-//                 strings={['Full Stack Developer', 'Frontend Developer', 'Backend Developer', 'Programmer']}
-//                 typeSpeed={40}
-//                 backSpeed={50}
-//                 loop
-//               />
-//             </span>
-//           </ResponsiveTypography>
-//           <Typography variant="body1" paragraph>
-//             I am a motivated and versatile individual, always eager to take on new challenges...
-//           </Typography>
-//           <CheckResumeButton variant="contained">Check Resume</CheckResumeButton>
-//         </Grid>
-//       </Grid>
-//     </StyledContainer>
-//   );
-// }
-
-// export default About;
-
-
 import * as React from 'react';
 import { experimentalStyled as styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -111,6 +5,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid2';
 import { Button, Typography } from '@mui/material';
 import { ReactTyped } from "react-typed";
+import { Bio } from '../../data/constants';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: '#f4f4f4',
@@ -157,7 +52,7 @@ const ResponsiveTypography = styled(Typography)(({ theme }) => ({
 
 export default function About() {
     return (
-        <>
+        <div id='about'>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block', md: 'block' }, padding: 10 }}>
                 <Grid container spacing={{ md: 1, sm: 1 }} columns={{ sm: 12, md: 12 }} >
                     <Grid size={{ sm: 7, md: 7 }}  >
@@ -167,7 +62,7 @@ export default function About() {
                         <ResponsiveTypography variant="h4" component="h2" gutterBottom>
                             I'm a{' '}
                             <span style={{ color: '#7e3af2', fontSize: '1.5rem',
-                                '@media (max-width:500px)': {
+                                '@media (maxWidth:500px)': {
                                     fontSize: '1rem',
                                 } }}>
                                 <ReactTyped
@@ -184,7 +79,7 @@ export default function About() {
                             paragraph
                             style={{
                                 fontSize: '1rem',
-                                '@media (max-width:500px)': {
+                                '@media (maxWidth:500px)': {
                                     fontSize: '0.875rem',
                                 }
                        
@@ -193,7 +88,7 @@ export default function About() {
                         I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning. I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.
 
                     </Typography>
-                    <CheckResumeButton variant="contained">Check Resume</CheckResumeButton>
+                    <CheckResumeButton  href={Bio.resume} variant="contained" >Check Resume</CheckResumeButton>
                 </Grid>
                 <Grid size={{ sm: 5, md: 5 }} sx={{ padding: 5, alignContent: 'center'}}>
                     <Box  >
@@ -232,7 +127,7 @@ export default function About() {
                             paragraph
                             style={{
                                 fontSize: '1rem',
-                                '@media (max-width:600px)': {
+                                '@media (maxWidth:600px)': {
                                     fontSize: '0.875rem',
                                 },
                             }}
@@ -240,12 +135,12 @@ export default function About() {
                             I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning. I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.
                         </Typography>
                         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-        <CheckResumeButton variant="contained" sx={{width:'200px'}}>Check Resume</CheckResumeButton>
+        <CheckResumeButton variant="contained" sx={{width:'200px'}} href={Bio.resume}>Check Resume</CheckResumeButton>
     </Box>
                     </Grid>
                 </Grid>
             </Box>
-        </>
+        </div>
 
     );
 }

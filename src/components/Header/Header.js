@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -11,8 +12,9 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
+import { Bio } from '../../data/constants';
 
-const pages = ['About', 'Skills', 'Experience', "Projects"];
+const pages = ['About', 'Skills', 'Experience', 'Projects'];
 
 function Header({ isDarkMode, toggleTheme }) {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -29,7 +31,7 @@ function Header({ isDarkMode, toggleTheme }) {
         <AppBar position="static" sx={{ backgroundColor: isDarkMode ? '#000000' : '#f4f4f4', color: isDarkMode ? '#f4f4f4' : '#000000', boxShadow: 'none' }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    {/* Left side: John Doe */}
+                    {/* Left side: Vishnu KM */}
                     <Typography
                         variant="h5"
                         noWrap
@@ -42,15 +44,22 @@ function Header({ isDarkMode, toggleTheme }) {
                     {/* Centered Pages */}
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center', alignItems: 'center' }}>
                         {pages.map((page) => (
-                            <Button
+                            <ScrollLink
                                 key={page}
-                                onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: isDarkMode ? 'white' : 'black', display: 'block' }}
+                                to={page.toLowerCase()}
+                                smooth={true}
+                                duration={500}
+                                offset={-70} // Offset to adjust for the fixed header height
                             >
-                                {page}
-                            </Button>
+                                <Button
+                                    onClick={handleCloseNavMenu}
+                                    sx={{ my: 2, color: isDarkMode ? 'white' : 'black', display: 'block' }}
+                                >
+                                    {page}
+                                </Button>
+                            </ScrollLink>
                         ))}
-                        <Button>GitHub</Button>
+                        <Button href={Bio.github}>GitHub</Button>
                     </Box>
 
                     {/* Right side: Theme Toggle Button and Menu Icon */}
@@ -89,12 +98,30 @@ function Header({ isDarkMode, toggleTheme }) {
                                 sx={{ display: { xs: 'block', md: 'none' } }}
                             >
                                 {pages.map((page) => (
-                                    <MenuItem key={page} onClick={handleCloseNavMenu}   >
-                                        <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
-                                    </MenuItem>
+                                    <ScrollLink
+                                        key={page}
+                                        to={page.toLowerCase()}
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-70} // Offset to adjust for the fixed header height
+                                        onClick={handleCloseNavMenu}
+                                    >
+                                        <MenuItem>
+                                            <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
+                                        </MenuItem>
+                                    </ScrollLink>
                                 ))}
-                                <MenuItem key='github' onClick={handleCloseNavMenu}   >
-                                    <Typography sx={{ textAlign: 'center' }}>Github</Typography>
+                                <MenuItem key='github' onClick={handleCloseNavMenu} >
+                                    <Typography
+                                        sx={{ textAlign: 'center' }}
+                                        component="a"
+                                        href={Bio.github}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        style={{ textDecoration: 'none', color: 'inherit' }}
+                                    >
+                                        Github
+                                    </Typography>
                                 </MenuItem>
                             </Menu>
                         </Box>

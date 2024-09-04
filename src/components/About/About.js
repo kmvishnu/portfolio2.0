@@ -5,6 +5,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid2';
 import { Button, Typography } from '@mui/material';
 import { ReactTyped } from "react-typed";
+import { Bio } from '../../data/constants';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: '#f4f4f4',
@@ -61,7 +62,7 @@ export default function About() {
                         <ResponsiveTypography variant="h4" component="h2" gutterBottom>
                             I'm a{' '}
                             <span style={{ color: '#7e3af2', fontSize: '1.5rem',
-                                '@media (max-width:500px)': {
+                                '@media (maxWidth:500px)': {
                                     fontSize: '1rem',
                                 } }}>
                                 <ReactTyped
@@ -78,7 +79,7 @@ export default function About() {
                             paragraph
                             style={{
                                 fontSize: '1rem',
-                                '@media (max-width:500px)': {
+                                '@media (maxWidth:500px)': {
                                     fontSize: '0.875rem',
                                 }
                        
@@ -87,7 +88,7 @@ export default function About() {
                         I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning. I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.
 
                     </Typography>
-                    <CheckResumeButton variant="contained">Check Resume</CheckResumeButton>
+                    <CheckResumeButton  href={Bio.resume} variant="contained" >Check Resume</CheckResumeButton>
                 </Grid>
                 <Grid size={{ sm: 5, md: 5 }} sx={{ padding: 5, alignContent: 'center'}}>
                     <Box  >
@@ -126,7 +127,7 @@ export default function About() {
                             paragraph
                             style={{
                                 fontSize: '1rem',
-                                '@media (max-width:600px)': {
+                                '@media (maxWidth:600px)': {
                                     fontSize: '0.875rem',
                                 },
                             }}
@@ -134,7 +135,7 @@ export default function About() {
                             I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning. I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.
                         </Typography>
                         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-        <CheckResumeButton variant="contained" sx={{width:'200px'}}>Check Resume</CheckResumeButton>
+        <CheckResumeButton variant="contained" sx={{width:'200px'}} href={Bio.resume}>Check Resume</CheckResumeButton>
     </Box>
                     </Grid>
                 </Grid>

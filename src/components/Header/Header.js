@@ -12,6 +12,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
+import { Bio } from '../../data/constants';
 
 const pages = ['About', 'Skills', 'Experience', 'Projects'];
 
@@ -58,7 +59,7 @@ function Header({ isDarkMode, toggleTheme }) {
                                 </Button>
                             </ScrollLink>
                         ))}
-                         <Button>GitHub</Button>
+                        <Button href={Bio.github}>GitHub</Button>
                     </Box>
 
                     {/* Right side: Theme Toggle Button and Menu Icon */}
@@ -110,8 +111,17 @@ function Header({ isDarkMode, toggleTheme }) {
                                         </MenuItem>
                                     </ScrollLink>
                                 ))}
-                                  <MenuItem key='github' onClick={handleCloseNavMenu}   >
-                                    <Typography sx={{ textAlign: 'center' }}>Github</Typography>
+                                <MenuItem key='github' onClick={handleCloseNavMenu} >
+                                    <Typography
+                                        sx={{ textAlign: 'center' }}
+                                        component="a"
+                                        href={Bio.github}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        style={{ textDecoration: 'none', color: 'inherit' }}
+                                    >
+                                        Github
+                                    </Typography>
                                 </MenuItem>
                             </Menu>
                         </Box>

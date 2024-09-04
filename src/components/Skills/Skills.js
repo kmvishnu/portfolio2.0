@@ -54,10 +54,7 @@ const SkillImage = styled('img')(({ theme }) => ({
 
 const Skills = ({ isDarkMode }) => {
 
-    // background-color: rgba(17, 25, 40, 0.83);
-    // border: 1px solid rgba(255, 255, 255, 0.125);
-    // box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-    // border-radius: 16px;
+   
 
     const Skill = styled('div')(({ theme }) => ({
         flex: '1 1 calc(50% - 60px)', // Adjust for 2 columns with gap

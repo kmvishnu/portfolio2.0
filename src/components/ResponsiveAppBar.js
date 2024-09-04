@@ -11,6 +11,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
+import { Bio } from '../data/constants';
 
 const pages = ['About', 'Skills', 'Experience', "Projects"];
 
@@ -50,7 +51,7 @@ function ResponsiveAppBar({ isDarkMode, toggleTheme }) {
                                 {page}
                             </Button>
                         ))}
-                        <Button>GitHub</Button>
+                        <Button  href={Bio.github}>GitHub</Button>
                     </Box>
 
                     {/* Right side: Theme Toggle Button and Menu Icon */}

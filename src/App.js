@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import Header from './components/Header/Header';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
+import Experience from './components/Experience/Experience';
+import styled from "styled-components";
+
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(true);
@@ -32,16 +35,20 @@ function App() {
         marginTop: '50px',  // Adjust this value based on your header height
     };
 
+
     return (
         <div style={appStyle}>
+            
             <header style={headerStyle}>
                 <Header isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
             </header>
             <div style={contentStyle}>
-                <About isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
-                <Skills isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+                <About isDarkMode={isDarkMode} />
+                <Skills isDarkMode={isDarkMode} />
+                <Experience isDarkMode={isDarkMode}/>
                 {/* Other components go here */}
             </div>
+            
         </div>
     );
 }

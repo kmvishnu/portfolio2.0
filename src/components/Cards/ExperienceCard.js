@@ -13,16 +13,6 @@ const Document = styled.img`
     }
 `
 
-const Description = styled.div`
-    width: 100%;
-    font-size: 15px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
-    margin-bottom: 10px;
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`
 
 const Span = styled.span`
 overflow: hidden;
@@ -33,9 +23,60 @@ max-width: 100%;
 text-overflow: ellipsis;
 `
 
-const Card = styled.div`
+
+
+
+const Top = styled.div`
+    width: 100%;
+    display: flex;
+    gap: 12px
+`
+
+const Image = styled.img`
+    height: 50px;
+    background-color: #000;
+    border-radius: 10px;
+    margin-top: 4px;
+    @media only screen and (max-width: 768px){
+        height: 40px;
+    }
+`
+
+const Body = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+`
+
+
+
+
+
+const Skills = styled.div`
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    margin-top: -10px;
+`
+
+const ItemWrapper = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+`
+
+
+
+
+
+
+
+const ExperienceCard = ({ experience, isDarkMode }) => {
+
+    const Card = styled.div`
     width: 90%; // Set width to 100% of the parent container
     max-width: 650px; // Optional: max width to maintain the design on larger screens
+    background-color: ${isDarkMode ? '#111928d4' : '#f4f4f4'};
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     padding: 18px;
@@ -70,85 +111,53 @@ const Card = styled.div`
     box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
 `;
 
-
-const Top = styled.div`
-    width: 100%;
-    display: flex;
-    gap: 12px
-`
-
-const Image = styled.img`
-    height: 50px;
-    background-color: #000;
-    border-radius: 10px;
-    margin-top: 4px;
-    @media only screen and (max-width: 768px){
-        height: 40px;
-    }
-`
-
-const Body = styled.div`
-    width: 100%;
-    display: flex;
-    flex-direction: column; 
-`
-
-
-const Role = styled.div`
+    const Role = styled.div`
     font-size: 18px;
     font-weight: 600;
-    color: ${({ theme }) => theme.text_primary + 99};
+    color: ${isDarkMode ? '#d2d0d0' : '#000'};
     @media only screen and (max-width: 768px){
         font-size: 14px;
     }
 `
 
-const Company = styled.div`
+    const Company = styled.div`
     font-size: 14px;
     font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
+    color: ${isDarkMode ? '#d2d0d0' : '#000'};
     @media only screen and (max-width: 768px){
         font-size: 12px;
     }
 `
 
-const Date = styled.div`
+    const Date = styled.div`
     font-size: 12px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
+    color: ${isDarkMode ? '#d2d0d0' : '#000'};
     @media only screen and (max-width: 768px){
         font-size: 10px;
     }
 `
 
-
-const Skills = styled.div`
-    width: 100%;
-    display: flex;
-    gap: 12px;
-    margin-top: -10px;
-`
-
-const ItemWrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-`
-
-const Skill = styled.div`
+    const Skill = styled.div`
     font-size: 15px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
+    color: ${isDarkMode ? '#d2d0d0' : '#000'};
     @media only screen and (max-width: 768px){
         font-size: 12px;
     }
 `
 
-    
-   
+    const Description = styled.div`
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    color: ${isDarkMode ? '#d2d0d0' : '#000'};
+    margin-bottom: 10px;
+    @media only screen and (max-width: 768px){
+        font-size: 12px;
+    }
+`
 
-
-const ExperienceCard = ({experience}) => {
     return (
         <Card>
             <Top>

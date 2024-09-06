@@ -3,10 +3,16 @@ import Header from './components/Header/Header';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Experience from './components/Experience/Experience';
+import Projects from './components/Projects/Projects';
+import { ThemeProvider } from 'styled-components';
+import ProjectDetails from './components/ProjectDetails/ProjectDetails';
+import { darkTheme, lightTheme } from './utils/theme';
 
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(true);
+  const [openModal, setOpenModal] = useState({ state: false, project: null });
+
 
     const toggleTheme = () => {
         setIsDarkMode(!isDarkMode);
@@ -36,6 +42,8 @@ function App() {
 
 
     return (
+    <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
+
         <div style={appStyle}>
             
             <header style={headerStyle}>
@@ -45,10 +53,14 @@ function App() {
                 <About isDarkMode={isDarkMode} />
                 <Skills isDarkMode={isDarkMode} />
                 <Experience isDarkMode={isDarkMode}/>
-                {/* Other components go here */}
+                <Projects openModal={openModal} setOpenModal={setOpenModal} isDarkMode={isDarkMode} />
+
             </div>
-            
+            {openModal.state &&
+            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} isDarkMode={isDarkMode}/>
+          }
         </div>
+        </ThemeProvider>
     );
 }
 

@@ -14,7 +14,7 @@ import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import { Bio } from '../../data/constants';
 
-const pages = ['About', 'Skills', 'Experience', 'Projects'];
+const pages = ['About', 'Skills', 'Experience', 'Projects', 'Education'];
 
 function Header({ isDarkMode, toggleTheme }) {
     const [anchorElNav, setAnchorElNav] = React.useState(null);

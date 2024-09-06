@@ -7,6 +7,8 @@ import Projects from './components/Projects/Projects';
 import { ThemeProvider } from 'styled-components';
 import ProjectDetails from './components/ProjectDetails/ProjectDetails';
 import { darkTheme, lightTheme } from './utils/theme';
+import Education from './components/Education/Education';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -54,6 +56,10 @@ function App() {
                 <Skills isDarkMode={isDarkMode} />
                 <Experience isDarkMode={isDarkMode}/>
                 <Projects openModal={openModal} setOpenModal={setOpenModal} isDarkMode={isDarkMode} />
+                <Education isDarkMode={isDarkMode}/>
+                <Footer isDarkMode={isDarkMode}/>
+
+                
 
             </div>
             {openModal.state &&

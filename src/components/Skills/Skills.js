@@ -76,7 +76,7 @@ const Skills = ({ isDarkMode }) => {
     const SkillItem = styled('div')(({ theme }) => ({
         fontSize: '16px',
         fontWeight: 400,
-        color: isDarkMode ? '#E2E8F0' : theme.text_primary + 80,
+        color: isDarkMode ? '#d2d0d0' : theme.text_primary + 80,
         borderRadius: '12px',
         boxShadow: '#3b3b3b9e 0px 4px 10px',
         padding: '12px 16px',
@@ -120,7 +120,7 @@ const Skills = ({ isDarkMode }) => {
     const SkillTitle = styled('h2')(({ theme }) => ({
         fontSize: '28px',
         fontWeight: 600,
-        color: isDarkMode ? '#E2E8F0' : '#191d21',
+        color: isDarkMode ? '#d2d0d0' : '#191d21',
         marginBottom: '20px',
         textAlign: 'center',
         [theme.breakpoints.down('sm')]: {

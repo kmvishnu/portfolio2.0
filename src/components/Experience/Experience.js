@@ -180,7 +180,7 @@ export default function Experience({ isDarkMode }) {
                 </TimelineSeparator>
                 <TimelineContent>
 
-                  <ExperienceCard experience={experience} />
+                  <ExperienceCard experience={experience} isDarkMode={isDarkMode} />
                 </TimelineContent>
               </TimelineItem>
 

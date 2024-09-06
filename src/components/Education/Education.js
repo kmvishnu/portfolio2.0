@@ -8,7 +8,7 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent, {
   timelineOppositeContentClasses,
 } from '@mui/lab/TimelineOppositeContent';
-import {  educations, experiences } from '../../data/constants';
+import {  educations } from '../../data/constants';
 import { experimentalStyled as styled } from '@mui/material/styles';
 import { Box } from '@mui/material';
 import EducationCard from '../Cards/EducationCard';

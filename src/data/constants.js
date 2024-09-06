@@ -191,10 +191,10 @@ export const experiences = [
 
 ];
 
-export const education = [
+export const educations = [
     {
         id: 0,
-        img: "",
+        img: "https://github.com/kmvishnu/image_directory/blob/main/portfolio/education/ritLogo.png?raw=true",
         school: "RIT, Govt.Engg College Kottayam",
         date: "Aug 2018 - July 2021",
         grade: "6.7 CGPA",
@@ -203,7 +203,7 @@ export const education = [
     },
     {
         id: 1,
-        img: "",
+        img: "https://github.com/kmvishnu/image_directory/blob/main/portfolio/education/srgptcLogo.jpg?raw=true",
         school: "S.R.G.P.T.C Thriprayar",
         date: "Aug 2014 - July 2017",
         grade: "6.2 CGPA",
@@ -212,12 +212,12 @@ export const education = [
     },
     {
         id: 2,
-        img: "",
-        school: "Methodist School, Dankuni",
-        date: "Apr 2017 - Apr 2019",
-        grade: "92.3%",
+        img: "https://github.com/kmvishnu/image_directory/blob/main/portfolio/education/kazhimbramLogo.jpg?raw=true",
+        school: "V.P.M.S.N.D.P HSS, Kazhimbram",
+        date: "June 2012 - July 2014",
+        grade: "78%",
         desc: "I completed my class 12 Higher secondary school education at V.P.M.S.N.D.P HS School, Kazhimbram, where I studied Computer Science.",
-        degree: "ICSC(X), Science with Computer",
+        degree: "Computer Science",
     },
 ];
 

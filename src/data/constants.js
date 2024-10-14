@@ -278,7 +278,7 @@ export const projects = [
             "Railway"],
         category: "web app",
         github: "https://github.com/kmvishnu/fullStack-blog-app",
-        webapp: "https://podstream.netlify.app/",
+        webapp: "https://blogoshub.netlify.app/",
        
     },
     {

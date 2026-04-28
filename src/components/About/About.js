@@ -117,7 +117,13 @@ export default function About({ isDarkMode }) {
                             I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning. I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.
 
                         </Typography>
-                        <CheckResumeButton href={Bio.resume} variant="contained" >Check Resume</CheckResumeButton>
+                        <CheckResumeButton
+                            href="/resume.pdf"
+                            download="Vishnu_KM_Resume.pdf"
+                            variant="contained"
+                        >
+                            Check Resume
+                        </CheckResumeButton>
                     </Grid>
                     <Grid size={{ sm: 5, md: 5 }} sx={{ padding: 5, alignContent: 'center' }}>
                         <Box sx={{ position: 'relative', width: 'fit-content' }}>

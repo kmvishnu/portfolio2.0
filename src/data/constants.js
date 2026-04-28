@@ -12,7 +12,7 @@ export const Bio = {
         "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
     github: "https://github.com/kmvishnu",
     resume:
-        "https://drive.google.com/file/d/1DbeHpKtcUwadgKSiQB7ViL2a8XNHs7no/view?usp=sharing",
+        "resume.pdf",
     linkedin: "https://www.linkedin.com/in/vishnu-k-m-2bb28b293",
     instagram: "https://www.instagram.com/vishnu_k_m__/",
     image: "https://github.com/kmvishnu/image_directory/blob/1105dc442ed3ed9d4fc8a94cee57c3a1a707140c/portfolio/avatar/animationAvatar.jpg?raw=true"
@@ -351,6 +351,41 @@ export const projects = [
         github: "",
         webapp: "",
        
+    },
+    {
+        id: 7,
+        title: "Exit Air Cargo",
+        date: "July 2025 - August 2025",
+        description:
+            "Designed and developed Exitaircargo.com ,This is a Static website Created using Html Css and Javascript. Users can view the different services offered by the Exitaircargo team and reach them effectively. Hosted via Netlify",
+        image:
+            "https://github.com/kmvishnu/image_directory/blob/main/portfolio/personalProjects/Exitaircargo.png?raw=true",
+        tags: [
+            "HTML",
+            "Css",
+            "Javascript",
+            "Netlify"
+        ],
+        category: "static websites",
+        github: "https://github.com/kmvishnu/exit-air-cargo",
+        webapp: "https://www.exitaircargo.com/",
+    },
+    {
+        id: 8,
+        title: "Prime Audit Solutions",
+        date: "July 2025 - August 2025",
+        description:
+            "Designed and developed PrimeAuditSolutions.com ,This is a webapplication created using Next.Js and TailwindCss. Users can view the different services offered by the PrimeAuditSolutions team and reach them effectively. Hosted via Netlify",
+        image:
+            "https://github.com/kmvishnu/image_directory/blob/main/portfolio/personalProjects/Primeauditsolutions.png?raw=true",
+        tags: [
+            "Next.Js",
+            "TailwindCss",
+            "Netlify"
+        ],
+        category: "static websites",
+        webapp: "https://www.primeauditsolutions.com/",
+        github: "",
     },
 
 ];

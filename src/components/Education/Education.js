@@ -10,11 +10,13 @@ import TimelineOppositeContent, {
 } from '@mui/lab/TimelineOppositeContent';
 import {  educations } from '../../data/constants';
 import { experimentalStyled as styled } from '@mui/material/styles';
-import { Box } from '@mui/material';
+import { Box, useTheme, useMediaQuery } from '@mui/material';
 import EducationCard from '../Cards/EducationCard';
 
 
 export default function Education({ isDarkMode }) {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   const Title = styled('div')(({ theme }) => ({
     fontSize: '42px',
@@ -49,13 +51,15 @@ export default function Education({ isDarkMode }) {
         <Desc> My educational details are as follows.</Desc>
       </Box>
       <Timeline
+        position='right'
         sx={{
           [`& .${timelineOppositeContentClasses.root}`]: {
             flex: {
-              xs: 0.1, // Flex value for extra-small screens
-              sm: 0.1, // Flex value for small screens and up
+              xs: 0.1,
+              sm: 0.1,
               md: 0.25
             },
+            display: isMobile ? 'none' : 'block',
           },
         }}
       >
@@ -63,8 +67,11 @@ export default function Education({ isDarkMode }) {
           educations.map((education, key) => {
             return (
 
-              <TimelineItem>
-                <TimelineOppositeContent sx={{ color: isDarkMode ? '#E2E8F0' : '#191d21' }}>
+              <TimelineItem key={key}>
+                <TimelineOppositeContent sx={{ 
+                  color: isDarkMode ? '#E2E8F0' : '#191d21',
+                  display: isMobile ? 'none' : 'block'
+                }}>
                   {education.other}
                 </TimelineOppositeContent>
                 <TimelineSeparator>

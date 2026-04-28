@@ -118,10 +118,12 @@ import TimelineOppositeContent, {
 import ExperienceCard from '../Cards/ExperienceCard';
 import { experiences } from '../../data/constants';
 import { experimentalStyled as styled } from '@mui/material/styles';
-import { Box } from '@mui/material';
+import { Box, useTheme, useMediaQuery } from '@mui/material';
 
 
 export default function Experience({ isDarkMode }) {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   const Title = styled('div')(({ theme }) => ({
     fontSize: '42px',
@@ -156,13 +158,15 @@ export default function Experience({ isDarkMode }) {
         <Desc>My work experience as a software engineer</Desc>
       </Box>
       <Timeline
+        position='right'
         sx={{
           [`& .${timelineOppositeContentClasses.root}`]: {
             flex: {
-              xs: 0.1, // Flex value for extra-small screens
-              sm: 0.1, // Flex value for small screens and up
+              xs: 0.1,
+              sm: 0.1,
               md: 0.25
             },
+            display: isMobile ? 'none' : 'block',
           },
         }}
       >
@@ -170,8 +174,11 @@ export default function Experience({ isDarkMode }) {
           experiences.map((experience, key) => {
             return (
 
-              <TimelineItem>
-                <TimelineOppositeContent sx={{ color: isDarkMode ? '#E2E8F0' : '#191d21' }}>
+              <TimelineItem key={key}>
+                <TimelineOppositeContent sx={{ 
+                  color: isDarkMode ? '#E2E8F0' : '#191d21',
+                  display: isMobile ? 'none' : 'block'
+                }}>
                   {experience.other}
                 </TimelineOppositeContent>
                 <TimelineSeparator>

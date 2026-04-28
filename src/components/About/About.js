@@ -1,8 +1,9 @@
 import * as React from 'react';
+import { useState } from 'react';
 import { experimentalStyled as styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid2';
-import { Button, Typography } from '@mui/material';
+import { Button, Typography, Skeleton } from '@mui/material';
 import { ReactTyped } from "react-typed";
 import { Bio } from '../../data/constants';
 
@@ -21,11 +22,34 @@ const ProfileImage = styled('img')(({ theme }) => ({
     borderRadius: '50%',
     width: '100%',
     maxWidth: '300px',
-    height: 'auto',
+    height: '300px',
     marginTop: 0,
     border: '2px solid #7e3af2',
+    objectFit: 'cover',
     [theme.breakpoints.down('sm')]: {
         maxWidth: '200px',
+        height: '200px',
+    },
+}));
+
+const ProfileSkeleton = styled(Skeleton)(({ theme }) => ({
+    borderRadius: '50%',
+    width: '100%',
+    height: '100%',
+}));
+
+const ProfileSkeletonWrapper = styled('div')(({ theme }) => ({
+    borderRadius: '50%',
+    width: '300px',
+    height: '300px',
+    marginTop: 0,
+    border: '2px solid #7e3af2',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    [theme.breakpoints.down('sm')]: {
+        width: '200px',
+        height: '200px',
     },
 }));
 
@@ -50,6 +74,7 @@ const ResponsiveTypography = styled(Typography)(({ theme }) => ({
 }));
 
 export default function About({ isDarkMode }) {
+    const [loading, setLoading] = useState(true);
     return (
         <div id='about'>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block', md: 'block' }, padding: 10 }}>
@@ -95,8 +120,19 @@ export default function About({ isDarkMode }) {
                         <CheckResumeButton href={Bio.resume} variant="contained" >Check Resume</CheckResumeButton>
                     </Grid>
                     <Grid size={{ sm: 5, md: 5 }} sx={{ padding: 5, alignContent: 'center' }}>
-                        <Box  >
-                            <ProfileImage src={Bio.image} alt="Profile" />
+                        <Box sx={{ position: 'relative', width: 'fit-content' }}>
+                            {loading && (
+                                <ProfileSkeletonWrapper>
+                                    <ProfileSkeleton variant="circular" />
+                                </ProfileSkeletonWrapper>
+                            )}
+                            <ProfileImage
+                                src={Bio.image}
+                                alt="Profile"
+                                onLoad={() => setLoading(false)}
+                                onError={() => setLoading(false)}
+                                sx={{ display: loading ? 'none' : 'block' }}
+                            />
                         </Box>
                     </Grid>
                 </Grid>
@@ -107,7 +143,20 @@ export default function About({ isDarkMode }) {
                 <Grid container spacing={{ xs: 2 }} columns={{ xs: 12 }} >
                     <Grid size={{ xs: 12 }}  >
                         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-                            <ProfileImage src={Bio.image} alt="Profile" />
+                            <Box sx={{ position: 'relative', width: 'fit-content' }}>
+                                {loading && (
+                                    <ProfileSkeletonWrapper>
+                                        <ProfileSkeleton variant="circular" />
+                                    </ProfileSkeletonWrapper>
+                                )}
+                                <ProfileImage
+                                    src={Bio.image}
+                                    alt="Profile"
+                                    onLoad={() => setLoading(false)}
+                                    onError={() => setLoading(false)}
+                                    sx={{ display: loading ? 'none' : 'block' }}
+                                />
+                            </Box>
                         </Box>
                     </Grid>
                     <Grid size={{ xs: 12 }}>

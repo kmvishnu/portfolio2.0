@@ -95,7 +95,19 @@ function Header({ isDarkMode, toggleTheme }) {
                                 }}
                                 open={Boolean(anchorElNav)}
                                 onClose={handleCloseNavMenu}
-                                sx={{ display: { xs: 'block', md: 'none' } }}
+                                sx={{
+                                    display: { xs: 'block', md: 'none' },
+                                    '& .MuiPaper-root': {
+                                        backgroundColor: isDarkMode ? '#1a1a1a' : '#f4f4f4',
+                                        color: isDarkMode ? '#f4f4f4' : '#000000',
+                                    },
+                                    '& .MuiMenuItem-root': {
+                                        color: isDarkMode ? '#f4f4f4' : '#000000',
+                                        '&:hover': {
+                                            backgroundColor: isDarkMode ? '#333333' : '#e0e0e0',
+                                        },
+                                    },
+                                }}
                             >
                                 {pages.map((page) => (
                                     <ScrollLink

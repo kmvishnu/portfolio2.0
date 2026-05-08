@@ -53,7 +53,7 @@ export const skills = [
             },
             {
                 name: "CSS",
-                image:"data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIiA/Pgo8IS0tIFVwbG9hZGVkIHRvOiBTVkcgUmVwbywgd3d3LnN2Z3JlcG8uY29tLCBHZW5lcmF0b3I6IFNWRyBSZXBvIE1peGVyIFRvb2xzIC0tPgo8c3ZnIHdpZHRoPSI4MDBweCIgaGVpZ2h0PSI4MDBweCIgdmlld0JveD0iLTUyLjUgMCAzNjEgMzYxIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIj4KICAgIDxnPgogICAgICAgIDxwYXRoIGQ9Ik0xMjcuODQzODY4LDM2MC4wODc5MTIgTDIzLjY2MTcxNDMsMzMxLjE2NjI0MiBMMC40NDUxODY4MTMsNzAuNzY1NzE0MyBMMjU1LjU1NDgxMyw3MC43NjU3MTQzIEwyMzIuMzEzNjcsMzMxLjEyNTQ1MSBMMTI3Ljg0Mzg2OCwzNjAuMDg3OTEyIEwxMjcuODQzODY4LDM2MC4wODc5MTIgWiIgZmlsbD0iIzI2NERFNCI+Cg08L3BhdGg+CiAgICAgICAgPHBhdGggZD0iTTIxMi40MTY3MDMsMzE0LjU0NjYzNyBMMjMyLjI3NzgwMiw5Mi4wNTczMTg3IEwxMjgsOTIuMDU3MzE4NyBMMTI4LDMzNy45NTAyNDIgTDIxMi40MTY3MDMsMzE0LjU0NjYzNyBMMjEyLjQxNjcwMywzMTQuNTQ2NjM3IFoiIGZpbGw9IiMyOTY1RjEiPgoNPC9wYXRoPgogICAgICAgIDxwYXRoIGQ9Ik01My42Njg1NzE0LDE4OC42MzYxMzIgTDU2LjUzMDk4OSwyMjAuNTcyODM1IEwxMjgsMjIwLjU3MjgzNSBMMTI4LDE4OC42MzYxMzIgTDUzLjY2ODU3MTQsMTg4LjYzNjEzMiBMNTMuNjY4NTcxNCwxODguNjM2MTMyIFoiIGZpbGw9IiNFQkVCRUIiPgoNPC9wYXRoPgogICAgICAgIDxwYXRoIGQ9Ik00Ny45MTcwMTEsMTIzLjk5NDcyNSBMNTAuODIwMjE5OCwxNTUuOTMyMTMyIEwxMjgsMTU1LjkzMjEzMiBMMTI4LDEyMy45OTQ3MjUgTDQ3LjkxNzAxMSwxMjMuOTk0NzI1IEw0Ny45MTcwMTEsMTIzLjk5NDcyNSBaIiBmaWxsPSIjRUJFQkVCIj4KDTwvcGF0aD4KICAgICAgICA8cGF0aCBkPSJNMTI4LDI3MS41ODAxMzIgTDEyNy44NjAwNDQsMjcxLjYxNzQwNyBMOTIuMjkxNTE2NSwyNjIuMDEzMTg3IEw5MC4wMTc3NTgyLDIzNi41NDE4OSBMNTcuOTU3OTc4LDIzNi41NDE4OSBMNjIuNDMyMzUxNiwyODYuNjg3NjQ4IEwxMjcuODUzMDExLDMwNC44NDg4NzkgTDEyOCwzMDQuODA4MDg4IEwxMjgsMjcxLjU4MDEzMiBMMTI4LDI3MS41ODAxMzIgWiIgZmlsbD0iI0VCRUJFQiI+Cg08L3BhdGg+CiAgICAgICAgPHBhdGggZD0iTTYwLjQ4MzUxNjUsMCBMOTkuMTY0ODM1MiwwIEw5OS4xNjQ4MzUyLDE2LjE3NTgyNDIgTDc2LjY1OTM0MDcsMTYuMTc1ODI0MiBMNzYuNjU5MzQwNywzMi4zNTE2NDg0IEw5OS4xNjQ4MzUyLDMyLjM1MTY0ODQgTDk5LjE2NDgzNTIsNDguNTI3NDcyNSBMNjAuNDgzNTE2NSw0OC41Mjc0NzI1IEw2MC40ODM1MTY1LDAgTDYwLjQ4MzUxNjUsMCBaIiBmaWxsPSIjMDAwMDAwIj4KDTwvcGF0aD4KICAgICAgICA8cGF0aCBkPSJNMTA2LjkwMTA5OSwwIEwxNDUuNTgyNDE4LDAgTDE0NS41ODI0MTgsMTQuMDY1OTM0MSBMMTIzLjA3NjkyMywxNC4wNjU5MzQxIEwxMjMuMDc2OTIzLDE2Ljg3OTEyMDkgTDE0NS41ODI0MTgsMTYuODc5MTIwOSBMMTQ1LjU4MjQxOCw0OS4yMzA3NjkyIEwxMDYuOTAxMDk5LDQ5LjIzMDc2OTIgTDEwNi45MDEwOTksMzQuNDYxNTM4NSBMMTI5LjQwNjU5MywzNC40NjE1Mzg1IEwxMjkuNDA2NTkzLDMxLjY0ODM1MTYgTDEwNi45MDEwOTksMzEuNjQ4MzUxNiBMMTA2LjkwMTA5OSwwIEwxMDYuOTAxMDk5LDAgWiIgZmlsbD0iIzAwMDAwMCI+Cg08L3BhdGg+CiAgICAgICAgPHBhdGggZD0iTTE1My4zMTg2ODEsMCBMMTkyLDAgTDE5MiwxNC4wNjU5MzQxIEwxNjkuNDk0NTA1LDE0LjA2NTkzNDEgTDE2OS40OTQ1MDUsMTYuODc5MTIwOSBMMTkyLDE2Ljg3OTEyMDkgTDE5Miw0OS4yMzA3NjkyIEwxNTMuMzE4NjgxLDQ5LjIzMDc2OTIgTDE1My4zMTg2ODEsMzQuNDYxNTM4NSBMMTc1LjgyNDE3NiwzNC40NjE1Mzg1IEwxNzUuODI0MTc2LDMxLjY0ODM1MTYgTDE1My4zMTg2ODEsMzEuNjQ4MzUxNiBMMTUzLjMxODY4MSwwIEwxNTMuMzE4NjgxLDAgWiIgZmlsbD0iIzAwMDAwMCI+Cg08L3BhdGg+CiAgICAgICAgPHBhdGggZD0iTTIwMi4xMjY3NjksMTg4LjYzNjEzMiBMMjA3Ljg5MjM5NiwxMjMuOTk0NzI1IEwxMjcuODg5NTgyLDEyMy45OTQ3MjUgTDEyNy44ODk1ODIsMTU1LjkzMjEzMiBMMTcyLjg5MjEzMiwxNTUuOTMyMTMyIEwxNjkuOTg2MTEsMTg4LjYzNjEzMiBMMTI3Ljg4OTU4MiwxODguNjM2MTMyIEwxMjcuODg5NTgyLDIyMC41NzI4MzUgTDE2Ny4yMTY1MjcsMjIwLjU3MjgzNSBMMTYzLjUwOTQ1MSwyNjEuOTkyNzkxIEwxMjcuODg5NTgyLDI3MS42MDY4NTcgTDEyNy44ODk1ODIsMzA0LjgzMzQwNyBMMTkzLjM2MjI4NiwyODYuNjg3NjQ4IEwxOTMuODQyNjM3LDI4MS4yOTE5NTYgTDIwMS4zNDc1MTYsMTk3LjIxMjEzMiBMMjAyLjEyNjc2OSwxODguNjM2MTMyIEwyMDIuMTI2NzY5LDE4OC42MzYxMzIgWiIgZmlsbD0iI0ZGRkZGRiI+Cg08L3BhdGg+CiAgICA8L2c+Cjwvc3ZnPg==",
+                image: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIiA/Pgo8IS0tIFVwbG9hZGVkIHRvOiBTVkcgUmVwbywgd3d3LnN2Z3JlcG8uY29tLCBHZW5lcmF0b3I6IFNWRyBSZXBvIE1peGVyIFRvb2xzIC0tPgo8c3ZnIHdpZHRoPSI4MDBweCIgaGVpZ2h0PSI4MDBweCIgdmlld0JveD0iLTUyLjUgMCAzNjEgMzYxIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIj4KICAgIDxnPgogICAgICAgIDxwYXRoIGQ9Ik0xMjcuODQzODY4LDM2MC4wODc5MTIgTDIzLjY2MTcxNDMsMzMxLjE2NjI0MiBMMC40NDUxODY4MTMsNzAuNzY1NzE0MyBMMjU1LjU1NDgxMyw3MC43NjU3MTQzIEwyMzIuMzEzNjcsMzMxLjEyNTQ1MSBMMTI3Ljg0Mzg2OCwzNjAuMDg3OTEyIEwxMjcuODQzODY4LDM2MC4wODc5MTIgWiIgZmlsbD0iIzI2NERFNCI+Cg08L3BhdGg+CiAgICAgICAgPHBhdGggZD0iTTIxMi40MTY3MDMsMzE0LjU0NjYzNyBMMjMyLjI3NzgwMiw5Mi4wNTczMTg3IEwxMjgsOTIuMDU3MzE4NyBMMTI4LDMzNy45NTAyNDIgTDIxMi40MTY3MDMsMzE0LjU0NjYzNyBMMjEyLjQxNjcwMywzMTQuNTQ2NjM3IFoiIGZpbGw9IiMyOTY1RjEiPgoNPC9wYXRoPgogICAgICAgIDxwYXRoIGQ9Ik01My42Njg1NzE0LDE4OC42MzYxMzIgTDU2LjUzMDk4OSwyMjAuNTcyODM1IEwxMjgsMjIwLjU3MjgzNSBMMTI4LDE4OC42MzYxMzIgTDUzLjY2ODU3MTQsMTg4LjYzNjEzMiBMNTMuNjY4NTcxNCwxODguNjM2MTMyIFoiIGZpbGw9IiNFQkVCRUIiPgoNPC9wYXRoPgogICAgICAgIDxwYXRoIGQ9Ik00Ny45MTcwMTEsMTIzLjk5NDcyNSBMNTAuODIwMjE5OCwxNTUuOTMyMTMyIEwxMjgsMTU1LjkzMjEzMiBMMTI4LDEyMy45OTQ3MjUgTDQ3LjkxNzAxMSwxMjMuOTk0NzI1IEw0Ny45MTcwMTEsMTIzLjk5NDcyNSBaIiBmaWxsPSIjRUJFQkVCIj4KDTwvcGF0aD4KICAgICAgICA8cGF0aCBkPSJNMTI4LDI3MS41ODAxMzIgTDEyNy44NjAwNDQsMjcxLjYxNzQwNyBMOTIuMjkxNTE2NSwyNjIuMDEzMTg3IEw5MC4wMTc3NTgyLDIzNi41NDE4OSBMNTcuOTU3OTc4LDIzNi41NDE4OSBMNjIuNDMyMzUxNiwyODYuNjg3NjQ4IEwxMjcuODUzMDExLDMwNC44NDg4NzkgTDEyOCwzMDQuODA4MDg4IEwxMjgsMjcxLjU4MDEzMiBMMTI4LDI3MS41ODAxMzIgWiIgZmlsbD0iI0VCRUJFQiI+Cg08L3BhdGg+CiAgICAgICAgPHBhdGggZD0iTTYwLjQ4MzUxNjUsMCBMOTkuMTY0ODM1MiwwIEw5OS4xNjQ4MzUyLDE2LjE3NTgyNDIgTDc2LjY1OTM0MDcsMTYuMTc1ODI0MiBMNzYuNjU5MzQwNywzMi4zNTE2NDg0IEw5OS4xNjQ4MzUyLDMyLjM1MTY0ODQgTDk5LjE2NDgzNTIsNDguNTI3NDcyNSBMNjAuNDgzNTE2NSw0OC41Mjc0NzI1IEw2MC40ODM1MTY1LDAgTDYwLjQ4MzUxNjUsMCBaIiBmaWxsPSIjMDAwMDAwIj4KDTwvcGF0aD4KICAgICAgICA8cGF0aCBkPSJNMTA2LjkwMTA5OSwwIEwxNDUuNTgyNDE4LDAgTDE0NS41ODI0MTgsMTQuMDY1OTM0MSBMMTIzLjA3NjkyMywxNC4wNjU5MzQxIEwxMjMuMDc2OTIzLDE2Ljg3OTEyMDkgTDE0NS41ODI0MTgsMTYuODc5MTIwOSBMMTQ1LjU4MjQxOCw0OS4yMzA3NjkyIEwxMDYuOTAxMDk5LDQ5LjIzMDc2OTIgTDEwNi45MDEwOTksMzQuNDYxNTM4NSBMMTI5LjQwNjU5MywzNC40NjE1Mzg1IEwxMjkuNDA2NTkzLDMxLjY0ODM1MTYgTDEwNi45MDEwOTksMzEuNjQ4MzUxNiBMMTA2LjkwMTA5OSwwIEwxMDYuOTAxMDk5LDAgWiIgZmlsbD0iIzAwMDAwMCI+Cg08L3BhdGg+CiAgICAgICAgPHBhdGggZD0iTTE1My4zMTg2ODEsMCBMMTkyLDAgTDE5MiwxNC4wNjU5MzQxIEwxNjkuNDk0NTA1LDE0LjA2NTkzNDEgTDE2OS40OTQ1MDUsMTYuODc5MTIwOSBMMTkyLDE2Ljg3OTEyMDkgTDE5Miw0OS4yMzA3NjkyIEwxNTMuMzE4NjgxLDQ5LjIzMDc2OTIgTDE1My4zMTg2ODEsMzQuNDYxNTM4NSBMMTc1LjgyNDE3NiwzNC40NjE1Mzg1IEwxNzUuODI0MTc2LDMxLjY0ODM1MTYgTDE1My4zMTg2ODEsMzEuNjQ4MzUxNiBMMTUzLjMxODY4MSwwIEwxNTMuMzE4NjgxLDAgWiIgZmlsbD0iIzAwMDAwMCI+Cg08L3BhdGg+CiAgICAgICAgPHBhdGggZD0iTTIwMi4xMjY3NjksMTg4LjYzNjEzMiBMMjA3Ljg5MjM5NiwxMjMuOTk0NzI1IEwxMjcuODg5NTgyLDEyMy45OTQ3MjUgTDEyNy44ODk1ODIsMTU1LjkzMjEzMiBMMTcyLjg5MjEzMiwxNTUuOTMyMTMyIEwxNjkuOTg2MTEsMTg4LjYzNjEzMiBMMTI3Ljg4OTU4MiwxODguNjM2MTMyIEwxMjcuODg5NTgyLDIyMC41NzI4MzUgTDE2Ny4yMTY1MjcsMjIwLjU3MjgzNSBMMTYzLjUwOTQ1MSwyNjEuOTkyNzkxIEwxMjcuODg5NTgyLDI3MS42MDY4NTcgTDEyNy44ODk1ODIsMzA0LjgzMzQwNyBMMTkzLjM2MjI4NiwyODYuNjg3NjQ4IEwxOTMuODQyNjM3LDI4MS4yOTE5NTYgTDIwMS4zNDc1MTYsMTk3LjIxMjEzMiBMMjAyLjEyNjc2OSwxODguNjM2MTMyIEwyMDIuMTI2NzY5LDE4OC42MzYxMzIgWiIgZmlsbD0iI0ZGRkZGRiI+Cg08L3BhdGg+CiAgICA8L2c+Cjwvc3ZnPg==",
             },
             {
                 name: "Tailwind CSS",
@@ -194,7 +194,7 @@ export const experiences = [
         company: "Netroxe IT Solutions",
         //   other:"test",
         date: "Nov 2024 - Jan 2025",
-        desc:  "Contributed to the 'Movytech' project, a movie-related software application. Developed dynamic and responsive web applications using React and Tailwind CSS. Utilized libraries such as Shadcn and Headless UI to enhance the user interface and user experience.",
+        desc: "Contributed to the 'Movytech' project, a movie-related software application. Developed dynamic and responsive web applications using React and Tailwind CSS. Utilized libraries such as Shadcn and Headless UI to enhance the user interface and user experience.",
         skills: [
             "React",
             "TypeScript",
@@ -255,7 +255,55 @@ export const educations = [
 
 export const projects = [
     {
-        id: 1,
+        "id": 0,
+        "title": "BookMyStay",
+        "date": "May 2026",
+        "description": "Developed a full-stack hotel booking platform with a seamless end-to-end reservation experience for customers, hotel owners, and staff. Built a scalable backend using Node.js, Express, and PostgreSQL with strict data validation, transactional booking logic, and concurrency-safe inventory management using SELECT FOR UPDATE. Implemented smart search functionality with real-time availability, price preview before booking, and role-based dashboards for admins, hotel owners, and staff. Designed a modern, responsive frontend using React, Vite, and Tailwind CSS with optimized UX flows including global search state, date validation, and multi-step booking process. The system ensures data integrity, prevents overbooking, and delivers a smooth user experience across devices.",
+        "image": "https://github.com/kmvishnu/image_directory/blob/main/portfolio/personalProjects/bookmystay.png?raw=true",
+        "tags": [
+            "React",
+            "Vite",
+            "TypeScript",
+            "Tailwind CSS",
+            "Node.js",
+            "Express.js",
+            "PostgreSQL",
+            "REST API",
+            "JWT Authentication",
+            "React Query",
+            "Full Stack Development"
+        ],
+        "category": "web app",
+        "github": "https://github.com/kmvishnu/HMS-Client",
+        "webapp": "https://bookmystayapp.vercel.app/"
+    },
+    {
+        "id": 1,
+        "title": "BookMyStay HMS Owner",
+        "date": "May 2026",
+        "description": "Developed a comprehensive hotel management dashboard for property owners and staff as part of the BookMyStay ecosystem. Designed a multi-hotel management system where owners can manage multiple properties, configure room types, control pricing, update amenities, and manage staff assignments. Implemented strict hotel-scoped APIs with role-based access control ensuring secure and isolated operations. Built real-time booking management features including check-in/check-out operations, occupancy tracking, and inventory control with manual overrides. The frontend was developed using React, Vite, and Tailwind CSS with a clean, futuristic UI, dynamic routing based on hotel context, and optimized state management using React Query. The system enables efficient day-to-day hotel operations with high reliability and scalability.",
+        "image": "https://github.com/kmvishnu/image_directory/blob/main/portfolio/personalProjects/bookmystay-hms.png?raw=true",
+        "tags": [
+            "React",
+            "Vite",
+            "TypeScript",
+            "Tailwind CSS",
+            "Node.js",
+            "Express.js",
+            "PostgreSQL",
+            "REST API",
+            "JWT Authentication",
+            "Role-Based Access Control",
+            "Dashboard Design",
+            "React Query",
+            "Full Stack Development"
+        ],
+        "category": "web app",
+        "github": "https://github.com/kmvishnu/HMS-Owner",
+        "webapp": "https://hms-owner.vercel.app/"
+    },
+    {
+        id: 2,
         title: "NextGen TodoApp",
         date: "July 2024 - Present",
         description:
@@ -278,7 +326,7 @@ export const projects = [
         webapp: "https://nextgentodoapp.netlify.app/login",
     },
     {
-        id: 2,
+        id: 3,
         title: "BlogosHub",
         date: "July 2024 - Present",
         description:
@@ -290,10 +338,10 @@ export const projects = [
         category: "web app",
         github: "https://github.com/kmvishnu/fullStack-blog-app",
         webapp: "https://blogoshub.netlify.app/",
-       
+
     },
     {
-        id: 3,
+        id: 4,
         title: "RoleGuard",
         date: "September 2024",
         description:
@@ -304,10 +352,10 @@ export const projects = [
         category: "web app",
         github: "https://github.com/kmvishnu/RoleGuardFrontend",
         webapp: "https://role-guard-frontend.vercel.app",
-       
+
     },
     {
-        id: 4,
+        id: 5,
         title: "Rqube",
         date: "July 2022 - October 2022",
         description:
@@ -325,7 +373,7 @@ export const projects = [
         webapp: "https://www.rqube.in/",
     },
     {
-        id: 5,
+        id: 6,
         title: "V Music",
         date: "February 2022 - March 2022",
         description:
@@ -336,10 +384,10 @@ export const projects = [
         category: "web app",
         github: "https://github.com/kmvishnu/music_player",
         webapp: "",
-       
+
     },
     {
-        id: 6,
+        id: 7,
         title: "Loka Agencies Virtual Shop",
         date: "May 2020 - August 2020",
         description:
@@ -350,10 +398,10 @@ export const projects = [
         category: "android app",
         github: "",
         webapp: "",
-       
+
     },
     {
-        id: 7,
+        id: 8,
         title: "Exit Air Cargo",
         date: "July 2025 - August 2025",
         description:
@@ -371,7 +419,7 @@ export const projects = [
         webapp: "https://www.exitaircargo.com/",
     },
     {
-        id: 8,
+        id: 9,
         title: "Prime Audit Solutions",
         date: "July 2025 - August 2025",
         description:

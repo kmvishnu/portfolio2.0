@@ -118,8 +118,8 @@ export default function About({ isDarkMode }) {
 
                         </Typography>
                         <CheckResumeButton
-                            href="/resume.pdf"
-                            download="Vishnu_KM_Resume.pdf"
+                            href="/Vishnu_KM_Resume"
+                            download="Vishnu_KM_Vishnu_KM_Resume"
                             variant="contained"
                         >
                             Check Resume

@@ -299,7 +299,7 @@ export const projects = [
     description:
       "Architected a full-stack job discovery and management platform featuring an optimized end-to-end recruitment workflow for job seekers and recruiters (Admins). Engineered a production-grade authentication engine leveraging cross-origin HTTP-only Cookies to handle secure JWT Access and Refresh token lifecycles, mitigating risks of XSS and token interception. Built a high-performance backend using Node.js, Express, and Prisma ORM coupled with a PostgreSQL database, introducing scalable endpoints that support server-side pagination metadata and complex multi-parameter search filtering. Designed a futuristic, lightweight tech-inspired frontend using React, Vite, and Tailwind CSS. Implemented advanced global state management using Redux Toolkit to natively track data mutations, dynamic routing guards for role-based permissions, client-side validation logic, and fluid micro-interactions including responsive navigation drawers and interactive modal overlays.",
     image:
-      "https://github.com/kmvishnu/image_directory/blob/main/portfolio/personalProjects/nexuscareers.png?raw=true",
+      "https://raw.githubusercontent.com/kmvishnu/image_directory/refs/heads/main/portfolio/personalProjects/NexusCareers.png",
     tags: [
       "React",
       "Vite",

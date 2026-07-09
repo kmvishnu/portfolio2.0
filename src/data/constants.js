@@ -441,4 +441,17 @@ export const projects = [
     webapp: "https://www.primeauditsolutions.com/",
     github: "",
   },
+  {
+    id: 11,
+    title: "Nexavia Global Cargo",
+    date: "June 2026 - July 2026", 
+    description:
+      "Designed and developed NexaviaGlobalCargo.com, a responsive logistics and cargo web application built using Next.js and Tailwind CSS. Integrated a secure serverless contact and inquiry pipeline using the Resend API, featuring automated routing and streamlined customer communication channels. Deployed and optimized via Netlify with custom GoDaddy domain integration.",
+    image:
+      "https://github.com/kmvishnu/image_directory/blob/main/portfolio/personalProjects/NexaviaCargo.png?raw=true",
+    tags: ["Next.Js", "TailwindCss", "Resend API", "Netlify"],
+    category: "static websites",
+    webapp: "https://www.nexaviaglobalcargo.com/",
+    github: "",
+  },
 ];

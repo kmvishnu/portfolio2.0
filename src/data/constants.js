@@ -15,7 +15,7 @@ export const Bio = {
   linkedin: "https://www.linkedin.com/in/vishnu-k-m-2bb28b293",
   instagram: "https://www.instagram.com/vishnu_k_m__/",
   image:
-    "https://github.com/kmvishnu/image_directory/blob/1105dc442ed3ed9d4fc8a94cee57c3a1a707140c/portfolio/avatar/animationAvatar.jpg?raw=true",
+    "/avatar.jpeg",
 };
 
 export const skills = [
@@ -184,7 +184,7 @@ export const experiences = [
   {
     id: 1,
     img: jobExperiences.netroxe,
-    role: "Frontend Developer",
+    role: "Software Developer",
     company: "Netroxe IT Solutions",
     //   other:"test",
     date: "Nov 2024 - Jan 2025",

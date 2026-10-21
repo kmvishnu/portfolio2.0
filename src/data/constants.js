@@ -294,6 +294,30 @@ export const projects = [
   },
   {
     id: 2,
+    title: "StreamitGpt",
+    date: "October 2026",
+    description:
+      "Developed a Netflix-inspired streaming discovery platform with AI-powered search capabilities. Integrated the TMDB API to fetch real-time movie and TV show metadata including titles, descriptions, ratings, and background artwork, rendering an immersive full-screen hero section with a YouTube trailer iframe as an ambient background. Built a responsive, dark-themed UI using React (CRA) and Tailwind CSS with a fixed gradient header, language selector, and user profile management powered by Firebase Authentication. Integrated Google's Gemini API to enable natural-language, conversational search — allowing users to discover content with free-form queries rather than rigid keyword filters. Managed global application state using Redux Toolkit for authentication, language preferences, and search view toggling. Deployed on Firebase Hosting with SPA rewrite rules for client-side routing.",
+    image:
+      "https://github.com/kmvishnu/image_directory/blob/main/portfolio/personalProjects/StreamitGpt.png?raw=true",
+    tags: [
+      "React",
+      "CRA",
+      "Tailwind CSS",
+      "Redux Toolkit",
+      "Firebase Authentication",
+      "Firebase Hosting",
+      "TMDB API",
+      "Gemini API",
+      "YouTube API",
+      "Responsive Design",
+    ],
+    category: "web app",
+    github: "",
+    webapp: "https://streamitgpt.web.app",
+  },
+  {
+    id: 3,
     title: "Nexus Careers",
     date: "June 2026",
     description:
@@ -319,7 +343,7 @@ export const projects = [
     webapp: "https://nexuscareers.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "NextGen TodoApp",
     date: "July 2024 - Present",
     description:
@@ -342,7 +366,7 @@ export const projects = [
     webapp: "https://nextgentodoapp.netlify.app/login",
   },
   {
-    id: 4,
+    id: 5,
     title: "BlogosHub",
     date: "July 2024 - Present",
     description:
@@ -364,7 +388,7 @@ export const projects = [
     webapp: "https://blogoshub.netlify.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "RoleGuard",
     date: "September 2024",
     description:
@@ -377,7 +401,7 @@ export const projects = [
     webapp: "https://role-guard-frontend.vercel.app",
   },
   {
-    id: 6,
+    id: 7,
     title: "Rqube",
     date: "July 2022 - October 2022",
     description:
@@ -390,7 +414,7 @@ export const projects = [
     webapp: "https://www.rqube.in/",
   },
   {
-    id: 7,
+    id: 8,
     title: "V Music",
     date: "February 2022 - March 2022",
     description:
@@ -403,7 +427,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 8,
+    id: 9,
     title: "Loka Agencies Virtual Shop",
     date: "May 2020 - August 2020",
     description:
@@ -416,7 +440,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 9,
+    id: 10,
     title: "Exit Air Cargo",
     date: "July 2025 - August 2025",
     description:
@@ -429,7 +453,7 @@ export const projects = [
     webapp: "https://www.exitaircargo.com/",
   },
   {
-    id: 10,
+    id: 11,
     title: "Prime Audit Solutions",
     date: "July 2025 - August 2025",
     description:
@@ -442,9 +466,9 @@ export const projects = [
     github: "",
   },
   {
-    id: 11,
+    id: 12,
     title: "Nexavia Global Cargo",
-    date: "June 2026 - July 2026", 
+    date: "June 2026 - July 2026",
     description:
       "Designed and developed NexaviaGlobalCargo.com, a responsive logistics and cargo web application built using Next.js and Tailwind CSS. Integrated a secure serverless contact and inquiry pipeline using the Resend API, featuring automated routing and streamlined customer communication channels. Deployed and optimized via Netlify with custom GoDaddy domain integration.",
     image:
@@ -454,4 +478,4 @@ export const projects = [
     webapp: "https://www.nexaviaglobalcargo.com/",
     github: "",
   },
-];
+];   

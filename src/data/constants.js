@@ -164,7 +164,7 @@ export const experiences = [
   {
     id: 0,
     img: jobExperiences.ust,
-    role: "FullStack Developer",
+    role: "Full Stack Developer",
     //   other:"current",
     company: "UST",
     date: "Nov 2021 - Nov 2024",
@@ -194,10 +194,10 @@ export const experiences = [
   {
     id: 2,
     img: jobExperiences.synergy,
-    role: "FullStack Web Developer",
-    company: "Synergy Edutech Pvt Ltd",
-    date: "Mar 2025 - Present",
-    desc: "Contributed to the 'Synergy LMS' project, a Learning Management System. Developed dynamic and responsive web applications using React and Tailwind CSS. Utilized libraries such as Shadcn and Headless UI to enhance the user interface and user experience.",
+    role: "Full Stack Developer",
+    company: "Synergy Edulearn Pvt Ltd",
+    date: "Mar 2025 - Oct 2026",
+    desc: "Contributed to the 'Mocha LMS' project, a Learning Management System. Developed dynamic and responsive web applications using React and Tailwind CSS. Utilized libraries such as Shadcn and Headless UI to enhance the user interface and user experience.",
     skills: [
       "React",
       "TypeScript",
@@ -242,6 +242,35 @@ export const educations = [
 export const projects = [
   {
     id: 0,
+    title: "Ink",
+    date: "October 2026",
+    description:
+      "Architected and engineered a production-grade, zero-knowledge personal journaling web platform prioritizing data privacy and distraction-free writing. Built a robust client-side encryption engine leveraging the native Web Crypto API (AES-256-GCM, PBKDF2 with 310,000 iterations) to derive non-extractable cryptographic keys from a user-defined 6-digit PIN, ensuring entry content and attachments remain completely unreadable on the server. Integrated a headless rich-text editing experience using TipTap with custom extensions for formatting, image uploads, auto-save status indications, and automated idle session locking. Constructed a modular serverless backend using Node.js, Express, and PostgreSQL (Neon) with Upstash Redis sliding-window rate limiting, domain-scoped HTTP-only session cookies, and reverse-proxy routing deployed to a custom subdomain.",
+    image:
+      "https://github.com/kmvishnu/image_directory/blob/main/portfolio/personalProjects/ink.png?raw=true",
+    tags: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "TipTap",
+      "Web Crypto API",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Neon",
+      "Redis",
+      "Upstash",
+      "Vercel",
+      "Full Stack Development",
+    ],
+    category: "web app",
+    github: "",
+    webapp: "https://ink.kmvishnu.in",
+  },
+  {
+    id: 1,
     title: "BookMyStay",
     date: "May 2026",
     description:
@@ -266,7 +295,7 @@ export const projects = [
     webapp: "https://bookmystayapp.vercel.app/",
   },
   {
-    id: 1,
+    id: 2,
     title: "BookMyStay HMS Owner",
     date: "May 2026",
     description:
@@ -293,7 +322,7 @@ export const projects = [
     webapp: "https://hms-owner.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "StreamitGpt",
     date: "October 2026",
     description:
@@ -317,7 +346,7 @@ export const projects = [
     webapp: "https://streamitgpt.web.app",
   },
   {
-    id: 3,
+    id: 4,
     title: "Nexus Careers",
     date: "June 2026",
     description:
@@ -343,7 +372,7 @@ export const projects = [
     webapp: "https://nexuscareers.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "NextGen TodoApp",
     date: "July 2024 - Present",
     description:
@@ -366,7 +395,7 @@ export const projects = [
     webapp: "https://nextgentodoapp.netlify.app/login",
   },
   {
-    id: 5,
+    id: 6,
     title: "BlogosHub",
     date: "July 2024 - Present",
     description:
@@ -388,7 +417,7 @@ export const projects = [
     webapp: "https://blogoshub.netlify.app/",
   },
   {
-    id: 6,
+    id: 7,
     title: "RoleGuard",
     date: "September 2024",
     description:
@@ -401,7 +430,7 @@ export const projects = [
     webapp: "https://role-guard-frontend.vercel.app",
   },
   {
-    id: 7,
+    id: 8,
     title: "Rqube",
     date: "July 2022 - October 2022",
     description:
@@ -414,7 +443,7 @@ export const projects = [
     webapp: "https://www.rqube.in/",
   },
   {
-    id: 8,
+    id: 9,
     title: "V Music",
     date: "February 2022 - March 2022",
     description:
@@ -427,7 +456,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 9,
+    id: 10,
     title: "Loka Agencies Virtual Shop",
     date: "May 2020 - August 2020",
     description:
@@ -440,7 +469,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 10,
+    id: 11,
     title: "Exit Air Cargo",
     date: "July 2025 - August 2025",
     description:
@@ -453,7 +482,7 @@ export const projects = [
     webapp: "https://www.exitaircargo.com/",
   },
   {
-    id: 11,
+    id: 12,
     title: "Prime Audit Solutions",
     date: "July 2025 - August 2025",
     description:
@@ -466,7 +495,7 @@ export const projects = [
     github: "",
   },
   {
-    id: 12,
+    id: 13,
     title: "Nexavia Global Cargo",
     date: "June 2026 - July 2026",
     description:
@@ -478,4 +507,4 @@ export const projects = [
     webapp: "https://www.nexaviaglobalcargo.com/",
     github: "",
   },
-];   
+];  

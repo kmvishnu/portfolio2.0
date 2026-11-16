@@ -14,8 +14,7 @@ export const Bio = {
   resume: "Vishnu_KM_FullStack_Developer_Resume.pdf",
   linkedin: "https://www.linkedin.com/in/vishnu-k-m-2bb28b293",
   instagram: "https://www.instagram.com/vishnu_k_m__/",
-  image:
-    "/avatar.jpeg",
+  image: "/avatar.jpeg",
 };
 
 export const skills = [
@@ -371,7 +370,7 @@ export const projects = [
     github: "https://github.com/kmvishnu/tnp-job-portal-frontend",
     webapp: "https://nexuscareers.vercel.app/",
   },
-    {
+  {
     id: 5,
     title: "Do - the todo app ( PWA )",
     date: "November 2026",
@@ -398,7 +397,7 @@ export const projects = [
     category: "web app",
     github: "",
     webapp: "https://do.kmvishnu.in",
-  },,
+  },
   {
     id: 6,
     title: "BlogosHub",
@@ -512,4 +511,4 @@ export const projects = [
     webapp: "https://www.nexaviaglobalcargo.com/",
     github: "",
   },
-];  
+];

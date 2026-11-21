@@ -511,4 +511,17 @@ export const projects = [
     webapp: "https://www.nexaviaglobalcargo.com/",
     github: "",
   },
+  {
+    id: 14,
+    title: "Kuloo Pastrey and Cafe",
+    date: "October 2026 - November 2026",
+    description:
+      "Architected and developed KulooPastreyAndCafe.com, a high-performance Next.js 15 App Router web application for an artisanal pastry kitchen and wholesale frozen snack supplier in Ajman, UAE. Engineered an interactive product catalog with instant category filtering, real-time cart state management, and direct WhatsApp order generation with automated 5% UAE VAT calculations. Integrated serverless contact pipelines via Netlify Forms with honeypot spam protection, comprehensive Schema.org JSON-LD structured data (LocalBusiness & ItemList), dynamic XML sitemaps, and full Google Search Console verification readiness.",
+    image:
+      "https://github.com/kmvishnu/image_directory/blob/main/portfolio/personalProjects/kuloo.png?raw=true",
+    tags: ["Next.Js", "TypeScript", "TailwindCss", "Netlify Forms", "SEO & Schema.org"],
+    category: "static websites",
+    webapp: "https://kuloopastreyandcafe.com/",
+    github: "",
+  },
 ];
